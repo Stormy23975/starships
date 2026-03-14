@@ -1,0 +1,30 @@
+@media only screen and (min-width: 35rem) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #ship-nav {
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    #ship-nav button {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.85rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    #ship-img {
+        max-height: 380px;
+        max-width: 640px;
+    }
+
+    #ship-name {
+        font-size: 1.6rem;
+    }
+
+} /* end media query*/

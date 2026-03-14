@@ -1,0 +1,101 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* ── Base / Mobile ── */
+
+body {
+    margin: 0;
+    background-color: #0a0e1a;
+    color: #e8e8e8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #0d1117;
+    border-bottom: 2px solid #f5c518;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #f5c518;
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+#ship-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0.75rem;
+    background-color: #111827;
+    border-bottom: 1px solid #1e2d3d;
+}
+
+#ship-nav button {
+    background-color: #1e2d3d;
+    color: #c9d1d9;
+    border: 1px solid #30414f;
+    border-radius: 4px;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+#ship-nav button:hover {
+    background-color: #2a3f54;
+    color: #f5c518;
+    border-color: #f5c518;
+}
+
+#ship-nav button.active {
+    background-color: #f5c518;
+    color: #0a0e1a;
+    border-color: #f5c518;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+#ship-img {
+    max-width: 100%;
+    max-height: 55vw;
+    border-radius: 6px;
+    border: 2px solid #1e2d3d;
+    display: block;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+}
+
+#ship-name {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #f5c518;
+    letter-spacing: 0.05em;
+}
+
+/* Footer */
+footer {
+    background-color: #0d1117;
+    border-top: 2px solid #1e2d3d;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    color: #6e7681;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 0;
+}
