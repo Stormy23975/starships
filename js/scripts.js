@@ -1,4 +1,4 @@
-fetch('../data/starships.json')
+fetch('starships/data/starships.json')
     .then(Response => Response.json())
     .then(ships => {
         buildNav(ships);
